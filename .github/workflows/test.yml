@@ -1,0 +1,14 @@
+name: Test
+
+on:
+  pull_request: {}
+
+jobs:
+  BuildAndroid:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+    
+    steps:
+      - run: |
+          echo "Test"
